@@ -1,3 +1,15 @@
+/**
+ * @file bf_interpreter.hpp
+ * @author FoxCode - Jarek Filipiuk-Ohradka (filipiukjarek@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2023-01-20
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ * @details Brainfuck interpreter.
+ * More info and example test programs can be found on wikipedia: https://en.wikipedia.org/wiki/Brainfuck#Hello_World!
+ */
 #pragma once
 
 #include <stdint.h>
@@ -8,7 +20,6 @@ class bf_interpreter
 {
 private:
     uint8_t *mem_ptr;
-    // uint8_t* ret_addr;
     std::string::iterator instr_ptr;
     std::stack<std::string::iterator> while_begin_stack;
     std::stack<std::string::iterator> while_end_stack;   
@@ -27,12 +38,7 @@ private:
 public:
     bf_interpreter() {
         this->mem_ptr = array;
-        // ret_addr = NULL;
-    //    this->while_end_stack.push(NULL);
-    //    this->while_begin_stack.push(NULL) 
     }
     ~bf_interpreter() {}
-
-   
     void start();
 };
