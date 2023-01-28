@@ -109,15 +109,6 @@ void bf_interpreter::start()
         for (instr_ptr = input_line.begin(); instr_ptr != input_line.end(); instr_ptr++)
         {
             loop_instr = this->parse_console_input(*instr_ptr);
-
-            if (loop_instr == '[')
-            {
-                
-            } 
-            else if (loop_instr == ']')
-            {
-                
-            }
         }
     }
     

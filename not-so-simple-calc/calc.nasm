@@ -47,14 +47,5 @@ add_numbers:
 ; now result resides in r10 register, to display numbers to the console conversion must take place
 ; All registers are displayed by the virtual machine to verify results
 
-;00011000 11001111 ^ 0000000 11111111 = 11001111 - '0'
-;r_out += 11001111 - '0'
-;
-;00011000 11001111 >> 8 = 00011000
-;00011000 - '0' * 10
-;
-;r_mul *=10
-; if no more bytes break read_in_loop ()
-
 .end:
 voff
