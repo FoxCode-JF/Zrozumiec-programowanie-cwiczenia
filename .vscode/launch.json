@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug bf_compiler",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bf-compiler/bf_compiler",
+            "args": ["./bf-compiler/test_simple.bf"], // Specify any arguments your bf_compiler expects
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build bf_compiler (Debug)", // Match the label of your build task
+            "miDebuggerPath": "/usr/bin/gdb" // Adjust this path to match the location of GDB on your system
+        }
+    ]
+}
