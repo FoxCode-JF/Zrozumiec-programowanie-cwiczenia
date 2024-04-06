@@ -8,8 +8,8 @@
             "name": "Debug bf_compiler",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bf-compiler/bf_compiler",
-            "args": ["./bf-compiler/test_simple.bf"], // Specify any arguments your bf_compiler expects
+            "program": "${workspaceFolder}/chapter_3/bf-compiler/bf_compiler",
+            "args": ["./chapter_3/bf-compiler/test_simple.bf"], // Specify any arguments your bf_compiler expects
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],

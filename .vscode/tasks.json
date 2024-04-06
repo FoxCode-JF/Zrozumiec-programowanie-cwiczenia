@@ -59,10 +59,10 @@
             "command": "gcc",
             "args": [
                 "-g", // Include debugging symbols
-                "-o", "${workspaceFolder}/bf-compiler/bf_compiler", //output path
-                "bf_compiler",
-                "${workspaceFolder}/bf-compiler/bf_compiler.c",
-                "${workspaceFolder}/bf-compiler/main.c",
+                "-o", "${workspaceFolder}/chapter_3/bf-compiler/bf_compiler", //output path
+                // "bf_compiler",
+                "${workspaceFolder}/chapter_3/bf-compiler/bf_compiler.c",
+                "${workspaceFolder}/chapter_3/bf-compiler/main.c",
                 // Add any other .c or .h files you want to compile together
                 // For example, if you have more source files, add them here
                 // "${workspaceFolder}/additional_file.c",
