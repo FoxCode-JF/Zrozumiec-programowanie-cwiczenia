@@ -24,6 +24,27 @@
             ],
             "preLaunchTask": "build bf_compiler (Debug)", // Match the label of your build task
             "miDebuggerPath": "/usr/bin/gdb" // Adjust this path to match the location of GDB on your system
+        },
+        {
+            "name": "Debug bignum",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_4/INT:bignum/bignum",
+            // "args": [], // Specify any arguments your bf_compiler expects
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build bignum(Debug)", // Match the label of your build task
+            "miDebuggerPath": "/usr/bin/gdb" // Adjust this path to match the location of GDB on your system
         }
     ]
 }

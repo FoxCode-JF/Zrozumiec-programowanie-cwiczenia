@@ -91,6 +91,43 @@
                     "message": 5
                 }
             }
+        },
+        {
+            "label": "build bignum(Debug)",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g", // Include debugging symbols
+                "-o", "${workspaceFolder}/chapter_4/INT:bignum/bignum", //output path
+                "${workspaceFolder}/chapter_4/INT:bignum/bignum.c",
+                // Add any other .c or .h files you want to compile together
+                // For example, if you have more source files, add them here
+                // "${workspaceFolder}/additional_file.c",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["absolute"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
         }
     ],
     "version": "2.0.0"
